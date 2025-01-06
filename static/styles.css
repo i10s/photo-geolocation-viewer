@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  form {
+    margin-bottom: 20px;
+  }
+  #map {
+    margin: auto;
+    border: 1px solid #ccc;
+  }
+  #errorMessage {
+    font-size: 14px;
+    color: red;
+  }
+  #photoInfo {
+    font-size: 16px;
+    color: green;
+    margin-top: 10px;
+  }
+  .info-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+  }
+  .info-box strong {
+    color: #000;
+  }
+  

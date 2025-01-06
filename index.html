@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Geolocation Viewer</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+  <script src="/static/exif.js"></script>
+</head>
+<body>
+  <h1>Photo Geolocation Viewer</h1>
+  <div class="info-box">
+    <p><strong>How it works:</strong> This application processes your photo entirely in your browser. Your image is never uploaded to a server, ensuring your privacy and security. The app extracts metadata (like GPS coordinates and timestamp) directly from the photo on your device and displays the information.</p>
+  </div>
+  <form id="uploadForm">
+    <label for="fileInput">Upload an image with GPS data:</label>
+    <input type="file" id="fileInput" accept="image/*" required>
+    <button type="submit">Upload</button>
+  </form>
+  <p id="errorMessage" style="color: red; display: none;"></p>
+  <p id="photoInfo" style="color: green; display: none;"></p>
+  <div id="map" style="width: 100%; height: 500px; margin-top: 20px;"></div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
